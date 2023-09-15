@@ -46,6 +46,27 @@ const operate = function (operator, operandA, operandB) {
   }
 };
 
+const numberButtons = document.querySelectorAll(`.numberBtn`);
+numberButtons.forEach((btn) => btn.addEventListener("click", addToDisplay));
+
+function addToDisplay(e) {
+  let buttonValue = this.getAttribute("data-value");
+  displayValue = displayValue + buttonValue;
+  display.textContent = displayValue;
+}
+
 let operandA;
 let operandB;
 let operator;
+
+let displayValue = "";
+
+const display = document.querySelector(".screen");
+
+// const playButtons = document.querySelectorAll(`.playButton`);
+// playButtons.forEach((button) =>
+//   button.addEventListener("click", playRoundFromButton)
+// );
+
+// function playRoundFromButton(e) {
+//   let playerChoice = this.getAttribute("data-key");

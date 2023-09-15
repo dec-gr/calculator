@@ -25,3 +25,8 @@
   height: 40px;
   border-radius: 50%;
 }
+
+.zeroBtn {
+  width: 80px;
+  border-radius: 40px;
+}
