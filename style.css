@@ -1,19 +1,27 @@
 .container {
   display: flex;
+  justify-content: center;
 }
 
 .calcBody {
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   border: solid 2px black;
+  border-radius: 10px;
 }
 
 .screen {
-  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
   font-size: 32px;
   color: white;
   height: 52px;
+  background-color: rgb(52, 52, 52);
+  margin: 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
 }
 
 .row {
@@ -25,9 +33,25 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: white;
+  margin: 2px;
 }
 
 .zeroBtn {
   width: 80px;
   border-radius: 40px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.numberBtnStyle {
+  background-color: rgb(108, 108, 108);
+}
+
+.sideBtnStyle {
+  background-color: rgb(244, 123, 31);
+}
+
+.topBtnStyle {
+  background-color: rgb(169, 169, 169);
 }
